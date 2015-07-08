@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<parameters>
+		
+	<!--input_dir>/home/bits/p2pClassifier/captures/</input_dir-->
+	
+	<output_dir>/home/bits/p2pClassifier/classifiedCaptures/</output_dir>
+	
+	<csvput_dir>/home/bits/p2pClassifier/csv/</csvput_dir>
+	
+	<oldCaps_dir>/home/bits/p2pClassifier/oldCaps/</oldCaps_dir>
+	
+	<dbPath>localhost:3306/idpt</dbPath>
+	
+	<!--tableName_ensem>flow_ensem</tableName_ensem-->
+	
+	<!--tableName_single>flow_tbl</tableName_single-->
+	
+	<append>classified</append>
+	
+	<model_name_path_ensem>/home/bits/pcapDir/models/meta_NB_j48_rf_22_fea_26_02_2015.model</model_name_path_ensem>
+	
+	<model_name_path_single>/home/bits/pcapDir/models/BN_22_features_24_02_2015.model</model_name_path_single>
+	
+	<!-- file_size>5000</file_size-->
+	<!-->files>5</files-->
+	<!--udp_timeout>6000000</udp_timeout-->
+	<!-->ignore_local>"ip and not net 74.125.0.0/16"</ignore_local-->
+</parameters>
+

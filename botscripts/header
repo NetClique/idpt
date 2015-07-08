@@ -1,0 +1,14 @@
+@relation ConversationRelation
+
+@attribute COMPRESSION numeric
+@attribute PRIME_WAVE_MAGNITUDE_PAYLOAD numeric
+@attribute DFT_PAYLOAD_MAGNITUDE1 numeric
+@attribute DFT_PAYLOAD_MAGNITUDE2 numeric
+@attribute DFT_PAYLOAD_MAGNITUDE3 numeric
+@attribute PRIME_WAVE_MAGNITUDE_IAT numeric
+@attribute DFT_INTERARRIVAL_TIME_MAGNITUDE1 numeric
+@attribute DFT_INTERARRIVAL_TIME_MAGNITUDE2 numeric
+@attribute DFT_INTERARRIVAL_TIME_MAGNITUDE3 numeric
+@attribute label{botnet,p2pbox}
+
+@data
