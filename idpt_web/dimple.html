@@ -1,0 +1,74 @@
+<html>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+<head>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    var svg = dimple.newSvg("body", 800, 600);
+    var data = [
+      { "Word":"Hello", "Awesomeness":2000 },
+      { "Word":"World", "Awesomeness":3000 }
+    ];
+    var chart = new dimple.chart(svg, data);
+    chart.addCategoryAxis("x", "Word");
+    chart.addMeasureAxis("y", "Awesomeness");
+    chart.addSeries(null, dimple.plot.bar);
+    chart.draw();
+  </script>
+  
+  <div id="graphicview">
+  
+  <script type="text/javascript">
+   var svg = dimple.newSvg("#graphicview", "100%", "100%");
+    var data = [
+    
+    			{"time":"1", "Produccion":"100.0","channel":"Piranometro"},
+    			{"time":"1", "Produccion":"80.0","channel":"Produccion"},
+    			{"time":"2", "Produccion":"88.0","channel":"Piranometro"},
+    			{"time":"2", "Produccion":"66.0","channel":"Produccion"},
+    			{"time":"3", "Produccion":"83.0","channel":"Piranometro"},
+    			{"time":"3", "Produccion":"106.0","channel":"Produccion"},
+    			{"time":"4", "Produccion":"77.0","channel":"Piranometro"},
+    			{"time":"4", "Produccion":"91.0","channel":"Produccion"},
+    			{"time":"5", "Produccion":"72.0","channel":"Piranometro"},
+    			{"time":"5", "Produccion":"81.0","channel":"Produccion"},
+    			{"time":"6", "Produccion":"66.0","channel":"Piranometro"},
+    			{"time":"6", "Produccion":"81.0","channel":"Produccion"},
+    			{"time":"7", "Produccion":"62.0","channel":"Piranometro"},
+    			{"time":"7", "Produccion":"51.0","channel":"Produccion"},
+    			{"time":"8", "Produccion":"57.0","channel":"Piranometro"},
+    			{"time":"8", "Produccion":"101.0","channel":"Produccion"},
+    			{"time":"9", "Produccion":"510.0","channel":"Piranometro"},
+    			{"time":"9", "Produccion":"74.0","channel":"Produccion"},
+    			{"time":"10", "Produccion":"10.0","channel":"Piranometro"},
+    			{"time":"10", "Produccion":"93.0","channel":"Produccion"}
+    			];
+    
+               
+   var myChart = new dimple.chart(svg, data);
+    	
+   myChart.setBounds(100, 100, "70%", "80%");
+   
+    
+   var x = myChart.addCategoryAxis("x", ["time","channel"]);//["time", "channel"]);
+    
+   var y1 = myChart.addMeasureAxis("y", "Produccion");
+   //var y2 = chart.addMeasureAxis("y", "Produccion");
+   
+   myChart.addSeries("channel", dimple.plot.bar);//, [x,y1]);
+ 
+   myChart.addLegend(65, 10, 510, 20, "right");
+      
+  
+    
+   myChart.draw(5000);
+  </script>
+  </div>
+
+</body>
+</html>
+<!--http://dimplejs.org/examples_viewer.html?id=bubbles_matrix#comment-1758614241-->

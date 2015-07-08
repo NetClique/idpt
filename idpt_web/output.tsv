@@ -1,0 +1,17 @@
+IP,Country,First_attack,IAT,Level
+66.135.63.103,USA,1:4:52,0.500000,Level-1
+6.4.104.235,Germany,3:29:43,0.400000,Level-1
+186.3.94.243,Ecuador,3:56:0,0.800000,Level-1
+186.3.94.243,Ecuador,6:30:21,0.600000,Level-1
+59.120.146.182,Taiwan,6:55:1,0.200000,Level-1
+198.12.87.151,USA,8:40:39,2.500000,Level-1
+80.82.64.145,Netherlands,0:59:37,4.625000,Level-2
+93.174.93.149,Netherlands,1:5:50,0.750000,Level-2
+89.248.171.2,Netherlands,6:42:5,0.375000,Level-2
+80.86.85.99,Germany,8:13:11,0.500000,Level-2
+89.248.171.2,Netherlands,15:30:16,0.375000,Level-2
+37.49.224.148,Netherlands,9:37:51,6.655738,Level-3
+89.248.164.55,Netherlands,15:20:22,0.600000,Level-3
+93.174.93.99,Netherlands,17:42:44,0.285714,Level-3
+93.174.93.119,Netherlands,20:33:34,0.761905,Level-3
+
